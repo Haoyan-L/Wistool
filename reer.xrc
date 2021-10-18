@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="ID_WXFRAME">
+        <style>wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <size>800,600</size>
+        <title>WIS工具</title>
+        <centered>1</centered>
+        <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+                <flag>wxGROW|wxALL</flag>
+                <border>0</border>
+                <option>1</option>
+                <object class="wxNotebook" name="ID_NOTEBOOK">
+                    <style>wxBK_DEFAULT</style>
+                    <object class="notebookpage">
+                        <label>曲线</label>
+                        <object class="wxSplitterWindow" name="ID_channel">
+                            <size>100,100</size>
+                            <style>wxSP_3DBORDER|wxSP_3DSASH|wxNO_BORDER</style>
+                            <orientation>vertical</orientation>
+                            <sashpos>150</sashpos>
+                            <minsize>0</minsize>
+                            <object class="wxListBox" name="ID_LISTBOX">
+                                <style>wxLB_SINGLE</style>
+                            </object>
+                            <object class="wxPanel" name="ID_PANEL">
+                                <style>wxSUNKEN_BORDER|wxTAB_TRAVERSAL</style>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="notebookpage">
+                        <label>流数据</label>
+                        <object class="wxSplitterWindow" name="ID_flow">
+                            <size>100,100</size>
+                            <style>wxSP_3DBORDER|wxSP_3DSASH|wxNO_BORDER</style>
+                            <orientation>vertical</orientation>
+                            <sashpos>150</sashpos>
+                            <minsize>0</minsize>
+                            <object class="wxListBox" name="ID_LISTBOX1">
+                                <style>wxLB_SINGLE</style>
+                            </object>
+                            <object class="wxTextCtrl" name="ID_TEXTCTRL">
+                                <style>wxTE_MULTILINE|wxHSCROLL</style>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="notebookpage">
+                        <label>表数据</label>
+                        <object class="wxSplitterWindow" name="ID_table">
+                            <size>100,100</size>
+                            <style>wxSP_3DBORDER|wxSP_3DSASH|wxNO_BORDER</style>
+                            <orientation>vertical</orientation>
+                            <sashpos>150</sashpos>
+                            <minsize>0</minsize>
+                            <object class="wxListBox" name="ID_LISTBOX2">
+                                <style>wxLB_SINGLE</style>
+                            </object>
+                            <object class="wxGrid" name="ID_GRID">
+                                <size>200,150</size>
+                                <style>wxSUNKEN_BORDER</style>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>
